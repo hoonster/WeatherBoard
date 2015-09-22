@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/weatheryd"
+    tools:context=".WeatherBoard" >
+
+    <RelativeLayout
+        android:id="@+id/layoutTextViews"
+        android:layout_width="match_parent"
+        android:layout_height="180dp" >
+
+        <TextView
+            android:id="@+id/maxTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="127dp"
+            android:layout_marginTop="92dp"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/minTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="127dp"
+            android:layout_marginTop="135dp"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/maxHumid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="265dp"
+            android:layout_marginTop="92dp"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/minHumid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="265dp"
+            android:layout_marginTop="135dp"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/weatherInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="335dp"
+            android:layout_marginTop="90dp"
+            android:src="@drawable/sunny_cloudy" />
+
+        <TextView
+            android:id="@+id/emerGency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="35dp"
+            android:textColor="#ffffff"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/currentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="75dp"
+            android:layout_marginTop="138dp"
+            android:textColor="#ffffff"
+            android:textSize="35sp" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@id/layoutTextViews"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/temper1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:background="#00000000"
+                android:textColor="#ffffff"
+                android:textSize="70sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/windDirection1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:background="#00000000"
+                android:gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:textSize="70sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/precipitation1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:background="#00000000"
+                android:gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:textSize="70sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout4"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/todayPrecipitation1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:background="#00000000"
+                android:gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:textSize="70sp" />
+        </LinearLayout>
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@id/first"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/layout5"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/humidity1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:background="#00000000"
+                android:gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:textSize="70sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout6"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/windSpeed1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:background="#00000000"
+                android:gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:textSize="70sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout7"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/atmosphericPressure1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:background="#00000000"
+                android:gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:textSize="70sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout8"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/yesterdayPrecipitation1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:background="#00000000"
+                android:gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:textSize="70sp" />
+        </LinearLayout>
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/second"
+        android:layout_marginTop="3dp" >
+
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="820dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="38dp"
+            android:background="#00000000"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="38sp" />
+
+        <TextView
+            android:id="@+id/editText3"
+            android:layout_width="820dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="5dp"
+            android:background="#00000000"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="38sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+       
+        android:text="" />
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="0dp"
+        android:layout_height="0dp" >
+    </ListView>
+
+</RelativeLayout>

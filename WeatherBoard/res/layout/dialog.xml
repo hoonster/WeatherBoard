@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <Spinner
+        android:id="@+id/sidospinner"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:prompt="@string/sido" />
+    
+    <Spinner
+        android:id="@+id/gugunspinner"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:prompt="@string/gugun" />
+    
+    <Spinner
+        android:id="@+id/dongspinner"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:prompt="@string/dong" />
+
+</LinearLayout>
